@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Nanomedya
-Plugin URI: https://nanomedya.com/
+Plugin URI: https://nanomedya.com
 Description: Nanomedya tarafından hazırlanan WordPress temaları için default ayarlar ve alanlar oluşturan WordPress eklentisi.
 Version: 0.0.1
 Requires at least: 5.0
