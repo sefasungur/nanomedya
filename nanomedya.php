@@ -34,6 +34,3 @@ require_once __DIR__ . "/inc/settings.php";
 
 /* Settings Application */
 require_once __DIR__ . "/inc/settingsApp.php";
-
-/* SVG Fix*/
-require_once __DIR__ . "/inc/atts/svg-fix.php";
