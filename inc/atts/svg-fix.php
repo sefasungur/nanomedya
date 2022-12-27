@@ -14,18 +14,25 @@ add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mime
 
 }, 10, 4 );
 
-function cc_mime_types( $mimes ){
-    $mimes['svg'] = 'image/svg+xml';
-    return $mimes;
+if (!function_exists('cc_mime_types')) {
+    function cc_mime_types($mimes)
+    {
+        $mimes['svg'] = 'image/svg+xml';
+        return $mimes;
+    }
+    add_filter('upload_mimes', 'cc_mime_types');
 }
-add_filter( 'upload_mimes', 'cc_mime_types' );
 
-function fix_svg() {
-    echo '<style type="text/css">
+if (!function_exists('fix_svg')) {
+    function fix_svg()
+    {
+        echo '<style type="text/css">
     .attachment-266x266, .thumbnail img {
         width: 100% !important;
         height: auto !important;
     }
 </style>';
+    }
+
+    add_action('admin_head', 'fix_svg');
 }
-add_action( 'admin_head', 'fix_svg' );
