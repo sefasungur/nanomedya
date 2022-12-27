@@ -3,7 +3,7 @@
 Plugin Name: Nanomedya
 Plugin URI: https://nanomedya.com
 Description: Nanomedya tarafından hazırlanan WordPress temaları için default ayarlar ve alanlar oluşturan WordPress eklentisi.
-Version: 0.0.2
+Version: 0.0.3
 Requires at least: 5.0
 Requires PHP: 7.4
 Author: Sefa Sungur
@@ -34,3 +34,6 @@ require_once __DIR__ . "/inc/settings.php";
 
 /* Settings Application */
 require_once __DIR__ . "/inc/settingsApp.php";
+
+/* SVG Fix*/
+require_once __DIR__ . "/inc/atts/svg-fix.php";
