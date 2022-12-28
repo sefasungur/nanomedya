@@ -128,7 +128,7 @@ if(!nm("comments")) {
         $wp_admin_bar->remove_menu('comments');
     });
 }
-
+/*
 if(nm("ssl-redirect")) {
     function shapeSpace_check_https() {
         if ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || $_SERVER['SERVER_PORT'] == 443) {
@@ -152,6 +152,7 @@ if(nm("ssl-redirect")) {
 
     add_action( 'template_redirect', 'bhww_ssl_template_redirect');
 }
+*/
 
 if(nm("404-redirect")) {
     if( !function_exists('redirect_404_to_homepage') ){

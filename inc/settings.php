@@ -69,6 +69,7 @@ if( class_exists( 'CSF' ) ) {
                 'text_width' => 80,
                 'default' => true
             ),
+			/*
             array(
                 'id'    => 'ssl-redirect',
                 'type'  => 'switcher',
@@ -79,6 +80,7 @@ if( class_exists( 'CSF' ) ) {
                 'default' => true,
                 'desc' => 'Sunucuda SSL yüklü değilse çalışmaz.'
             ),
+			*/
             array(
                 'id'    => '404-redirect',
                 'type'  => 'switcher',
